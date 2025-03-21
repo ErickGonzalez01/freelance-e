@@ -9,8 +9,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="img/png" href="/favicon.png">
   <title>Erick González | Transformando ideas en realidad digital</title>
-  <meta name="description" content="Erick González Programador autodidacta, desarrollador de aplicaciones web, diseño y desarrollo web, transformando ideas en realidad digital." />
-  <meta name="keywords" content="Erick Gonzalez, Programador, Desarrollador, Diseño web, Desarrollo web, Laravel, Vue, PHP, CodeIgniter, HTML, CSS, Bootstrap, JavaScript, MySQL, Git, GitHub, API RESTful, Tailwindcss" />
+  <meta name="description"
+    content="Erick González Programador autodidacta, desarrollador de aplicaciónes web, diseño y desarrollo web, transformando ideas en realidad digital." />
+  <meta name="keywords"
+    content="Erick Gonzalez, Programador, Desarrollador, Diseño web, Desarrollo web, Laravel, Vue, PHP, CodeIgniter, HTML, CSS, Bootstrap, JavaScript, MySQL, Git, GitHub, API RESTful, Tailwindcss" />
   <meta name="author" content="Erick González" />
 </head>
 
@@ -22,18 +24,41 @@
     <h1 class="text-center font-black text-2xl">Erick González | <samp class="text-amber-500">Programador</samp></h1>
 
     <div class="bg-gray-800 text-white font-black p-3">
-      <nav class="container">
+      <nav class="container hidden md:inline">
         <a class="border-gray-800 border-2 rounded p-2 hover:border-amber-500" href="#sobremi">Sobre mí</a>
-        <a class="border-gray-800 border-2 rounded p-2 hover:border-amber-500" href="#project">Projectos</a>
+        <a class="border-gray-800 border-2 rounded p-2 hover:border-amber-500" href="#project">Proyectos</a>
         <a class="border-gray-800 border-2 rounded p-2 hover:border-amber-500" href="#soft-kill">Habilidades</a>
-        <a class="border-gray-800 border-2 rounded p-2 hover:border-amber-500" href="#contact">Contactos</a>
+        <a class="border-gray-800 border-2 rounded p-2 hover:border-amber-500" href="#contact">Contácto</a>
+      </nav>
+      <nav class="container md:hidden">
+        <button id="btn-menu" class="rounded bg-gray-700 py-2 px-6 mb-2 inline-flex items-center gap-2">
+          <img class="h-[30px] w-[30px]" src="/menu.png" alt="Menú">
+          <span>Menú</span>
+        </button>
+
+        <aside id="aside" class="hidden opacity-0 transition-opacity duration-700 ease-in-out">
+          <ul>
+            <li class="mb-2">
+              <a class="p-2" href="#sobremi">Sobre mí</a>
+            </li>
+            <li class="mb-2">
+              <a class="p-2" href="#project">Proyectos</a>
+            </li>
+            <li class="mb-2"> 
+              <a class="p-2" href="#soft-kill">Habilidades</a>
+            </li>
+            <li class="mb-2">
+              <a class="p-2" href="#contact">Contácto</a></li>
+          </ul>
+        </aside>
+
       </nav>
     </div>
   </header>
 
   <div class="bg-[url('img/hero.jpg')]">
     <div class="bg-black/70 flex flex-col justify-center items-center h-[400px]">
-      
+
       <h2 class="text-white font-bold text-4xl">Diseño y desarrollo web.</h2>
       <p class="mb-5">Transformando ideas en realidad digital.</p>
 
@@ -47,18 +72,24 @@
         </svg>
         Nueva Guinea, RACS, Nicaragua.
       </p>
-      <a class="bg-gray-800 px-8 py-2 rounded hover:bg-gray-900 hover:text-amber-500 text-white font-black" href="#contact">Contactar</a>
+      <a class="bg-gray-800 px-8 py-2 rounded hover:bg-gray-900 hover:text-amber-500 text-white font-black"
+        href="#contact">Contactar</a>
     </div>
   </div>
 
   <div class="@container mx-3 md:mx-10 py-10 bg-gray-800 mt-10 rounded-2xl border-amber-500 border-2">
-    
+
     <h2 id="sobremi" class="text-center text-4xl font-medium">Sobre mí</h2>
 
     <section class="mt-10 px-10">
 
-      <p>Desde que inicié mi carrera, aposté por convertirme en un programador profesional. Opté por desarrollarme de forma  autodidacta y desarrollar mi pasión como programador. Desarrollando proyectos personales e adquirido solido conocimiento en arquitecturas API RESTful, Laravel, y Vue.
-        Haciendo uso de herramientas de control de versiones como Git y GitHub e automatizado despliegues y llevado aplicaciones a Producción por mencionar una de mis aplicaciones <em>Variedades Electroplaza</em> </p>
+      <p>Tras obtener mi título en Ingeniería de Sistemas, decidí seguir desarrollándome de manera autodidacta para
+        profundizar mis conocimientos y perseguir mi pasión por la programación. Este enfoque me permitió explorar y
+        perfeccionar habilidades clave a través de proyectos personales, adquiriendo un sólido conocimiento en
+        arquitecturas API RESTful, Laravel y Vue. Además, he utilizado herramientas de control de versiones como Git y
+        GitHub, lo que me ha permitido automatizar despliegues y llevar aplicaciones exitosamente a producción. Un
+        ejemplo destacado de mi trabajo es la aplicación <em>Variedades Electroplaza</em>, que refleja mi compromiso con
+        la calidad y la innovación.</p>
 
     </section>
 
@@ -69,35 +100,43 @@
       <div class="flex flex-col justify-center items-center">
         <h3 class="text-center text-amber-500 text-2xl mb-2">NotasRapidasOnLine</h3>
         <div class="flex flex-col justify-center items-center rounded-md border-2 border-amber-500 p-4">
-          <img class="transition-transform duration-500 hover:scale-110" src="/public/notasrapidas.PNG" alt="NotasRapidasOnLine">
-          <span class="text-gray-700 hover:text-gray-100">#PHP #CodeIgniter #Vuejs #Bootstrap #HTML #APIREST #MySQL</span>
+          <img class="transition-transform duration-500 hover:scale-110" src="/public/notasrapidas.PNG"
+            alt="NotasRapidasOnLine">
+          <span class="text-gray-700 hover:text-gray-100">#PHP #CodeIgniter #Vuejs #Bootstrap #HTML #APIREST
+            #MySQL</span>
         </div>
-        <p>Aplicacion para toma de notas rapidas el cual fue creada con las siguientes tecnologias: en el Front-End Vue js 3, en el Back-End CodeIgniter 4.</p>
+        <p>Aplicación para toma de notas rapidas la cual fue creada con las siguientes tecnologias: en el Front-End
+          Vue.js 3, en el Back-End CodeIgniter 4.</p>
       </div>
 
       <div class="flex flex-col justify-center items-center">
         <h3 class="text-center text-amber-500 text-2xl mb-2">Citas Médicas</h3>
         <div class="flex flex-col justify-center items-center rounded-md border-2 border-amber-500 p-4">
-          <img class="transition-transform duration-500 hover:scale-110" src="/public/citas_medicas.PNG" alt="Citas medicas">
+          <img class="transition-transform duration-500 hover:scale-110" src="/public/citas_medicas.PNG"
+            alt="Citas medicas">
           <span class="text-gray-700 hover:text-gray-100">#PHP #CodeIgniter #JQuery #Bootstrap #HTML #MMySQL</span>
         </div>
-        <p>Aplicacion para generar citas medicas e importar cita en pdf, se han implemetadi las sigientes tecnologias CodeIgniter, Boostrap, JQuery y HTML.</p>
+        <p>aplicación para generar citas medicas e importar cita en pdf, se han implemetadi las siguientes tecnologias
+          CodeIgniter, Bootstrap, JQuery y HTML.</p>
       </div>
 
       <div class="flex flex-col justify-center items-center">
         <h3 class="text-center text-amber-500 text-2xl mb-2">Variedades Electroplaza</h3>
         <div class="flex flex-col justify-center items-center rounded-md border-2 border-amber-500 p-4">
-          <img class="transition-transform duration-500 hover:scale-110" src="/public/electroplaza.PNG" alt="Variedades Electroplaza">
+          <img class="transition-transform duration-500 hover:scale-110" src="/public/electroplaza.PNG"
+            alt="Variedades Electroplaza">
           <span class="text-gray-700 hover:text-gray-100">#PHP #Laravel #Bootstrap #MMySQL</span>
         </div>
-        <p>Aplicacion de tienda de electrodomesticos donde los clientes pueden buscar y explorar productos, funcionalidades: Crrear producto, Crear categorias, Inactivar un producto, <a class="text-amber-500" href="https://variedadeselectroplaza.com/inicio">Click Aqui</a></p>
+        <p>aplicación de tienda de electrodomesticos donde los clientes pueden buscar y explorar productos,
+          funcionalidades: Crear producto, Crear categorias, Inactivar un producto, <a class="text-amber-500"
+            href="https://variedadeselectroplaza.com/inicio">Explora este proyecto aquí</a></p>
       </div>
     </main>
 
     <h2 id="soft-kill" class="text-center text-4xl font-medium mt-10">Habilidades</h2>
 
     <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 px-10">
-      <article class="px-5 rounded-md border-2 border-amber-500">        
+      <article class="px-5 rounded-md border-2 border-amber-500">
         <ul class="list-[circle] pl-5">
           <li>PHP</li>
           <li>CodeIgniter</li>
@@ -126,7 +165,7 @@
           <li>Proactividad</li>
           <li>Organización</li>
           <li>Capacidad de aprendizaje</li>
-          <li>Atencion al detalle</li>
+          <li>Atención al detalle</li>
         </ul>
       </article>
     </section>
@@ -134,40 +173,45 @@
     <div id="contact" class="mt-10">
 
       <h3 class="text-3xl text-center text-amber-500 font-medium">Contacto</h3>
-      
-        <form name="contact" class="mx-3 md:mx-auto md:w-2/3 bg-gray-900 p-6 rounded-lg mt-6" netlify>
 
-          <legend class="text-2xl font-light text-center mb-6">Contactanos rellenando todos los campos.</legend>
+      <form name="contact" class="mx-3 md:mx-auto md:w-2/3 bg-gray-900 p-6 rounded-lg mt-6" netlify>
 
-          <div class="flex flex-col">
+        <legend class="text-2xl font-light text-center mb-6">Contáctame rellenando todos los campos.</legend>
 
-            <div class="mb-6 pb-1 flex flex-row justify-between border-b-2 border-amber-500">
-              <label class="font-black w-30" for="name">Nombre:</label>
-              <input class="bg-gray-800 rounded-md text-gray-100 font-light p-1 w-sm" id="name" name="name" type="text" placeholder="Nombre" />
-            </div>
+        <div class="flex flex-col">
 
-            <div class="mb-6 pb-1 flex flex-row justify-between border-b-2 border-amber-500">
-              <label class="font-black w-30" for="phone">Telefono:</label>
-              <input id="phone" name="phone" class="bg-gray-800 rounded-md text-gray-100 font-light p-1 w-sm" type="tel" placeholder="Telefono" />
-            </div>
-
-            <div class="mb-6 pb-1 flex flex-row justify-between border-b-2 border-amber-500">
-              <label class="font-black w-30" for="email">Correo:</label>
-              <input id="email" name="email" class="bg-gray-800 rounded-md text-gray-100 font-light p-1 w-sm" type="email" placeholder="Correo" />
-            </div>
-
-            <div class="mb-6 pb-1 flex flex-col border-b-2 border-amber-500">
-              <label class="font-black w-30" for="message">Mensaje:</label>
-              <textarea id="message" name="message" class="bg-gray-800 rounded-md text-gray-100 font-light p-1 w-full" rows="5" placeholder="Escriba su mensaje"></textarea>
-            </div>
-
+          <div class="mb-6 pb-1 flex flex-row justify-between border-b-2 border-amber-500">
+            <label class="font-black w-30" for="name">Nombre:</label>
+            <input class="bg-gray-800 rounded-md text-gray-100 font-light p-1 w-sm" id="name" name="name" type="text"
+              placeholder="Nombre" />
           </div>
 
-          <div class="flex justify-center mt-6">
-            <input class="bg-gray-700 px-8 py-3 rounded-sm border-2 border-amber-500 hover:bg-amber-500 font-black" type="submit" value="Enviar" />
+          <div class="mb-6 pb-1 flex flex-row justify-between border-b-2 border-amber-500">
+            <label class="font-black w-30" for="phone">Telefono:</label>
+            <input id="phone" name="phone" class="bg-gray-800 rounded-md text-gray-100 font-light p-1 w-sm" type="tel"
+              placeholder="Telefono" />
           </div>
-        </form>
-      
+
+          <div class="mb-6 pb-1 flex flex-row justify-between border-b-2 border-amber-500">
+            <label class="font-black w-30" for="email">Correo:</label>
+            <input id="email" name="email" class="bg-gray-800 rounded-md text-gray-100 font-light p-1 w-sm" type="email"
+              placeholder="Correo" />
+          </div>
+
+          <div class="mb-6 pb-1 flex flex-col border-b-2 border-amber-500">
+            <label class="font-black w-30" for="message">Mensaje:</label>
+            <textarea id="message" name="message" class="bg-gray-800 rounded-md text-gray-100 font-light p-1 w-full"
+              rows="5" placeholder="Escriba su mensaje"></textarea>
+          </div>
+
+        </div>
+
+        <div class="flex justify-center mt-6">
+          <input class="bg-gray-700 px-8 py-3 rounded-sm border-2 border-amber-500 hover:bg-amber-500 font-black"
+            type="submit" value="Enviar" />
+        </div>
+      </form>
+
     </div>
   </div>
 
